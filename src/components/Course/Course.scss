@@ -1,0 +1,49 @@
+@use '../../assets/sass/variables' as *;
+
+.course{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: $color-grey-light;
+  border: 1px solid $color-black;
+  margin: 1.5rem;
+  text-align: center;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+  &__name{
+    background-color: $color-primary;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: $color-white;
+  }
+  &__summary{
+    margin: 1rem;
+  }
+  &__label{
+    background-color: $color-black;
+    color: $color-white;
+    padding: .5rem;
+    border-radius: 1rem;
+  }
+  &__id{
+    background-color: $color-black;
+    color: $color-white;
+    padding: .5rem;
+    border-radius: 5rem;
+    width:fit-content;
+  }
+}
+
+@media (min-width: 768px) {
+  .course__name{
+    font-size: 2rem;
+    height: 8vh;
+  }
+  .course__details, 
+  .course__label{
+    font-size: 1.6rem;
+  }
+  
+}

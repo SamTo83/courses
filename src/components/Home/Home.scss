@@ -1,0 +1,28 @@
+@use '../../assets/sass/variables' as *;
+
+.home{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
+  rgba(0, 0, 0, 0.2)), url('../../assets/images/banner.png');
+  height: 66vh;
+  padding: 1rem;
+  background-size: cover;
+  &__subtitle{
+    color: $color-grey-light;
+  }
+  &__description{
+    color: $color-grey-light;
+  }
+}
+
+@media (min-width: 768px) {
+  .home__subtitle{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  .home__description {
+    font-size: 2rem;
+    margin: 5rem;
+    padding: 4rem;
+  }
+}

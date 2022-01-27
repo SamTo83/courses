@@ -1,0 +1,81 @@
+@use '../../assets/sass/variables' as *;
+
+@media (min-width: 375px) {
+  .Form {
+    width: 92%;
+    min-width: 20rem;
+    background: $color-grey-light;
+    margin: 2rem 1rem;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.2)
+    );
+    form {
+      width: 100%;
+      padding: 2em;
+    }
+    .Form__title {
+      width: 88%;
+      color: lighten(grey, 30%);
+      font-family: 'open sans condensed';
+      font-size: 1rem;
+      display: flex;
+      justify-content: center;
+      text-transform: uppercase;
+      padding: .75em 1em .75em 1.5em;
+      margin: 0;
+      font-weight: 200;
+    }
+    input {
+      width: 82%;
+      margin-bottom: 2em;
+      padding: .5em 0;
+      border: none;
+      border-bottom: 1px solid #eaeaea;
+      padding-bottom: 1.25em;
+      color: #757575;
+    }
+    
+    .Form-btn {
+      display: inline-block;
+      background: $color-primary;
+      border: 1px solid darken($color-primary, 5%);
+      padding: .5em 2em;
+      color: white;
+      margin-right: .5em;
+      box-shadow: inset 0px 1px 0px fadeout(white, 80%); 
+      border-radius: 1rem;
+      .Form-btn:hover {
+        background: $color-grey-light;
+      }
+    }
+  }
+  
+}
+
+@media (min-width: 768px) {
+  .Form-container{
+    display: flex;
+    justify-content: center;
+  }
+  .Form {
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+  }
+    .Form input {
+      width: 94%;
+      padding: .5em
+    }
+    
+    .Form-btn {
+      border: 1px solid darken($color-primary, 5%);
+      padding: .5em 2em;
+      color: white;
+      margin-right: .5em;
+      border-radius: 1rem;
+    }
+
+  }

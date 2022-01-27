@@ -1,0 +1,42 @@
+@use '../../assets/sass/variables' as *;
+
+
+.nav{
+  background-image: url('../../assets/images/background.jpg');
+  background-size: cover;
+  height: 30vh;
+}
+.nav__container{
+  display: flex;
+}
+.nav-menu__item{
+  margin: 1rem;
+  padding: .2rem;
+  text-align: center;
+  text-decoration: none;
+  color: $color-grey-light;
+  font-size: 1rem;
+  width: 100px;
+  border-radius: 1rem;
+  background-color: $color-primary;
+}
+
+@media (min-width: 768px) {
+  img{
+    height: 8rem;
+    width: 8rem;
+  }
+  .nav{
+    height: 40vh;
+  }
+  .nav__container{
+    display: flex;
+    justify-content: center;
+  }
+  .nav-menu__item{
+    margin: 5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    width: 200px;
+  }
+}
